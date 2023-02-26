@@ -156,6 +156,18 @@ public class Login_Application extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "Wrong username or password!!!", "Message",JOptionPane.ERROR_MESSAGE);
         }
+        
+        if(jtuser.getText().contains("Mhery")&& jpassword.getText().contains("12345")){
+            Employee_Profile hframe = new Employee_Profile();
+            
+            hframe.setVisible(true);
+        }
+        
+        else{
+            JOptionPane.showMessageDialog(null, "Wrong username or password!!!", "Message",JOptionPane.ERROR_MESSAGE);
+        }
+            
+            
     }//GEN-LAST:event_bloginActionPerformed
 
     private void jcshow_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcshow_passwordActionPerformed
